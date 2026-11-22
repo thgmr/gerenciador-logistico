@@ -1,0 +1,72 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Caixa 5x9",
+            "sku": "12345",
+            "peso": 0.1,
+            "valor": 0.9
+        },
+        {
+            "id": 2,
+            "nome": "Caixa 4x7",
+            "sku": "1234567",
+            "peso": 0.7,
+            "valor": 0.16
+        }
+    ],
+    "enderecos": [
+        {
+            "id": 1,
+            "apelido": "Centro de distribuição Cianorte",
+            "cep": "",
+            "logradouro": "RUA DAS PALMEIRAS",
+            "numero": "190",
+            "cidade": "Cianorte",
+            "uf": "PR"
+        },
+        {
+            "id": 2,
+            "apelido": "Centro Maringá",
+            "cep": "",
+            "logradouro": "AV BRASIL",
+            "numero": "1200",
+            "cidade": "Maringá",
+            "uf": "PR"
+        }
+    ],
+    "transportadores": [
+        {
+            "id": 1,
+            "nome": "XPRESS FULL",
+            "documento": "",
+            "placa": "ABS1827",
+            "veiculo": "CAMINHAO BAU",
+            "telefone": ""
+        }
+    ],
+    "fretes": [
+        {
+            "id": 1,
+            "transportador_id": 1,
+            "origem_id": 1,
+            "destino_id": 2,
+            "data_frete": "2026-11-22",
+            "status": "Em Trânsito",
+            "itens": [
+                {
+                    "produto_id": 1,
+                    "nome": "Caixa 5x9",
+                    "sku": "12345",
+                    "quantidade": 20,
+                    "peso_unit": 0.1,
+                    "valor_unit": 0.9,
+                    "subtotal_peso": 2,
+                    "subtotal_valor": 18
+                }
+            ],
+            "peso_total": 2,
+            "valor_total": 18
+        }
+    ]
+}
